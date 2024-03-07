@@ -126,7 +126,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.3);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -140,7 +140,14 @@
   position: absolute;
   animation: identifier 1s infinite;
 }
-
+.pointer-md {
+  width: 10px;
+  height: 10px;
+  background-color: #f97316;
+  border-radius: 100%;
+  position: absolute;
+  animation: identifier 1s infinite;
+}
 @keyframes lineStraightAnimation {
   0% {
     height: 0;
@@ -197,6 +204,54 @@
     width: 9%;
   }
 }
+@keyframes lineMdAnimation1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 35%;
+  }
+}
+@keyframes lineMdAnimation2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 16.5%;
+  }
+}
+@keyframes lineMdAnimation3 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 17.9%;
+  }
+}
+@keyframes lineMdAnimation4 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 28.5%;
+  }
+}
+@keyframes lineMdAnimation5 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 18%;
+  }
+}
+@keyframes lineMdAnimation6 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 16%;
+  }
+}
 .line-straight {
   width: 1px;
   height: 100%;
@@ -240,4 +295,40 @@
   background-color: #000000;
   position: absolute;
   animation: lineAnimation6 1s forwards;
+}
+.line-md-1 {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  animation: lineMdAnimation1 1s forwards;
+}
+.line-md-2 {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  animation: lineMdAnimation2 1s forwards;
+}
+.line-md-3 {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  animation: lineMdAnimation3 1s forwards;
+}
+.line-md-4 {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  animation: lineMdAnimation4 1s forwards;
+}
+.line-md-5 {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  animation: lineMdAnimation5 1s forwards;
+}
+.line-md-6 {
+  width: 1px;
+  background-color: #000000;
+  position: absolute;
+  animation: lineMdAnimation6 1s forwards;
 }

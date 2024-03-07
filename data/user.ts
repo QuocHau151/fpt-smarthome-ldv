@@ -66,13 +66,3 @@ export const getBrandShopById = async (id: string) => {
     return null;
   }
 };
-export const getItOutsourceById = async (id: string) => {
-  try {
-    const itOutsource = await db.itOutsource.findUnique({
-      where: { id }, // Add the 'id' property with a default value
-    });
-    return itOutsource;
-  } catch {
-    return null;
-  }
-};

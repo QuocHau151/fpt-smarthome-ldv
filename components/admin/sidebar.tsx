@@ -111,16 +111,6 @@ export default function SideBar() {
                       "Brand Shop"
                     )}
                   </Link>
-                  <Link
-                    className="px-10 hover:bg-gray-700 block h-10 pt-2 "
-                    href="/admin/it-outsource"
-                  >
-                    {pathname === "/admin/it-outsource" ? (
-                      <span className="text-orange-900">IT Outsource</span>
-                    ) : (
-                      "IT Outsource"
-                    )}
-                  </Link>
                 </div>
               </AnimateHeight>
             </li>

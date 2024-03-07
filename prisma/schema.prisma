@@ -1,9 +1,9 @@
 // prisma/schema.prisma
 
 datasource db {
-  provider  = "postgresql"
+  provider  = "mongodb"
   url  	    = env("DATABASE_URL")
-  directUrl = env("DIRECT_URL")
+  
 }
 generator client {
   provider = "prisma-client-js"
@@ -38,13 +38,8 @@ enum StateBrandShop {
   Done
   Cancel
 }
-enum StateItOutsource {
-  Pending
-  Done
-  Cancel
-}
 model User {
-  id            String    @id @default(cuid())
+  id            String     @id @default(auto()) @map("_id") @db.ObjectId
   name          String?
   phone         String?
   email         String?   @unique
@@ -58,17 +53,17 @@ model User {
 }
 
 model Account {
-  id                 String  @id @default(cuid())
+  id                 String   @id @default(auto()) @map("_id") @db.ObjectId
   userId             String
   type               String
   provider           String
   providerAccountId  String
-  refresh_token      String?  @db.Text
-  access_token       String?  @db.Text
+  refresh_token      String?  
+  access_token       String?  
   expires_at         Int?
   token_type         String?
   scope              String?
-  id_token           String?  @db.Text
+  id_token           String?  
   session_state      String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -77,7 +72,7 @@ model Account {
   }
 
 model VerificationToken {
-  id String @id @default(cuid())
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
   email String
   token String @unique
   expires DateTime
@@ -85,7 +80,7 @@ model VerificationToken {
 }
 
 model PasswordResetToken {
-  id String @id @default(cuid())
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
   email String
   token String @unique
   expires DateTime
@@ -93,7 +88,8 @@ model PasswordResetToken {
 }
 
 model Product { 
-  id String @id @default(cuid())
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  id_product String?
   name String?
   category String?
   price String?
@@ -104,11 +100,11 @@ model Product {
   power String?
   connect String?
   type_key String?
-  expires DateTime?
+  expires DateTime
 }
 
 model Order {
-  id String @id @default(cuid())
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
   name String
   phone String
   email String
@@ -120,39 +116,30 @@ model Order {
   items_quantity String[]
 }
 model Contact {
-  id String @id @default(cuid())
-  name String?
-  email String?
-  phone String?
-  title String?
-  address String?
-  description String?
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  email String
+  phone String
+  title String
+  address String
+  description String
   state StateContact @default(Pending)
 }
 model Partner {
-  id String @id @default(cuid())
-  name String?
-  email String?
-  phone String?
-  address String?
-  note String?
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  email String
+  phone String
+  address String
+  note String
   state StatePartner @default(Pending)
 }
 model BrandShop {
-  id String @id @default(cuid())
-  name String?
-  email String?
-  phone String?
-  address String?
-  note String?
+  id String  @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  email String
+  phone String
+  address String
+  note String
   state StateBrandShop @default(Pending)
-}
-model ItOutsource {
-  id String  @id @default(cuid())
-  name String?
-  phone String?
-  address String?
-  type String?
-  time String?
-  state StateItOutsource @default(Pending)
 }

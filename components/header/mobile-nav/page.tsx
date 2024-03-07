@@ -515,12 +515,7 @@ export default function MobileNav() {
                 >
                   Căn hộ mẫu
                 </Link>
-                <Link
-                  className="text-left text-black px-6 font-medium text-[16px]"
-                  href="/it-outsource"
-                >
-                  IT Outsource
-                </Link>
+
                 <Accordion type="single" collapsible>
                   <AccordionItem className="border-b-0" value="item-1">
                     <AccordionTrigger>

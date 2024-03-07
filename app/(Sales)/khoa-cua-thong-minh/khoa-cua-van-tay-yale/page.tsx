@@ -93,7 +93,7 @@ export default function Page() {
                     Thương hiệu:
                     <p className="font-semibold">FPT Smart Home</p>
                   </h4>
-                  <h4>Mã Sản phẩm: {option?.id} </h4>
+                  <h4>Mã Sản phẩm: {option?.id_product} </h4>
                 </div>
               </div>
               <div className="flex flex-col gap-4 items-start justify-center border-b-[1px] border-black pb-10">

@@ -35,6 +35,7 @@ type SelectedOptions = {
 };
 interface ProductData {
   id: string;
+  id_product: string;
   name: string;
   category: string;
   price: number;

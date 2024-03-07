@@ -268,7 +268,6 @@ export default function Header() {
                               "Sales"
                             )}
                           </Link>
-
                           <Link
                             className="px-10 hover:bg-gray-700 block h-10 pt-2 "
                             href="/admin/product"
@@ -321,18 +320,7 @@ export default function Header() {
                               "Brand Shop"
                             )}
                           </Link>
-                          <Link
-                            className="px-10 hover:bg-gray-700 block h-10 pt-2 "
-                            href="/admin/it-outsource"
-                          >
-                            {pathname === "/admin/it-outsource" ? (
-                              <span className="text-orange-900">
-                                It Outsource
-                              </span>
-                            ) : (
-                              "It Outsource"
-                            )}
-                          </Link>
+                          
                         </div>
                       </AnimateHeight>
                     </li>

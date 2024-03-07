@@ -21,11 +21,12 @@ export default function Page() {
     }
   };
   useEffect(() => {
+    
     fetchData();
   }, []);
 
   const [selectedOptions, setSelectedOptions] = useState({
-    id: "PPLBS001",
+    id_product: "PPLBS001",
   });
 
   const handleChange = (event: any) => {
@@ -35,7 +36,9 @@ export default function Page() {
     });
   };
 
-  const option = products.find((item) => item.id === selectedOptions.id);
+  const option = products.find(
+    (item) => item.id_product === selectedOptions.id_product
+  );
 
   const handleAddToCart = (product: ProductData) => {
     addToCart(product);
@@ -81,7 +84,7 @@ export default function Page() {
                       Thương hiệu:
                       <p className="font-semibold">FPT Smart Home</p>
                     </h4>
-                    <h4>Mã Sản phẩm: {option?.id} </h4>
+                    <h4>Mã Sản phẩm: {option?.id_product} </h4>
                   </div>
                 </div>
 

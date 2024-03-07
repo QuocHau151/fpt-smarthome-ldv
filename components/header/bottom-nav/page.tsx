@@ -29,8 +29,7 @@ const navs = [
   { id: 2, link: "/san-pham", name: "Sản phẩm", active: <Product /> },
   { id: 3, link: "/giai-phap", name: "Giải pháp", active: <Solution /> },
   { id: 4, link: "/can-ho-mau", name: "Căn hộ mẫu" },
-  { id: 5, link: "/it-outsource", name: "IT Outsource" },
-  { id: 6, link: "/ho-tro", name: "Hỗ trợ", active: <Support /> },
+  { id: 5, link: "/ho-tro", name: "Hỗ trợ", active: <Support /> },
 ];
 export default function Bottom_Nav() {
   const user = useCurrentUser();
@@ -40,7 +39,7 @@ export default function Bottom_Nav() {
   };
 
   return (
-    <div className=" max-lg:hidden bg-white relative z-10">
+    <div className=" max-lg:hidden bg-white relative z-10 border-b-[1px] border-gray-300 drop-shadow-md">
       <div className=" container flex items-center justify-between  w-full h-[45px]  font-medium ">
         <div className="relative  flex gap-2 group  ">
           <Image
