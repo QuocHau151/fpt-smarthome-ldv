@@ -116,21 +116,25 @@ export default function Checkout() {
                       alt=""
                     ></Image>
                     <div>
-                      <p className="text-[15px]">{product.name}</p>
-                      <p className="text-[15px]">Mã sản phẩm: {product.id}</p>
+                      <p className="text-[15px] font-semibold">
+                        {product.name}
+                      </p>
+                      <p className="text-[15px]">
+                        Mã sản phẩm: {product.id_product}
+                      </p>
                     </div>
                   </div>
                   <p className="text-[15px]">{product.price} </p>
                   <div className="flex items-start justify-between gap-2">
                     <button
-                      onClick={() => decreaseQuantity(product.id)}
+                      onClick={() => decreaseQuantity(product.id_product)}
                       className=" w-5 h-5 hover:bg-orange-500 border-black border-[1px] flex items-center justify-center"
                     >
                       -
                     </button>
                     <p className="text-[15px]">{product.quantity}</p>
                     <button
-                      onClick={() => increaseQuantity(product.id)}
+                      onClick={() => increaseQuantity(product.id_product)}
                       className="w-5 h-5 hover:bg-orange-500 border-black border-[1px] flex items-center justify-center "
                     >
                       +
@@ -140,7 +144,7 @@ export default function Checkout() {
                     {handlePrice(product.price, product.quantity)}
                   </p>
                   <CiTrash
-                    onClick={() => removeFromCart(product.id)}
+                    onClick={() => removeFromCart(product.id_product)}
                     className="w-[20px] h-[20px]"
                   />
                 </div>
@@ -229,7 +233,7 @@ export default function Checkout() {
         <div className=" container hidden lg:items-start justify-center gap-8 p-10  md:flex-col lg:flex-row md:items-end max-md:flex-col max-md:flex">
           <div className="lg:basis-2/3 h-min bg-white rounded-2xl md:w-full">
             <div
-              className="grid grid-rows-1 px-8 text-[18px]  gap-6 py-6 border-b-[1px] border-black content-center "
+              className="grid grid-rows-1 px-7 text-[18px]  gap-6 py-6 border-b-[1px] border-black content-center "
               style={{
                 gridTemplateColumns: "minmax(0, 1fr)  8fr 1fr",
               }}
@@ -245,43 +249,47 @@ export default function Checkout() {
               <>
                 <div className="flex flex-col items-center  text-[18px]  border-b-[1px] border-black gap-2 py-10 ">
                   <div
-                    className="grid grid-rows-1 px-8 text-[18px] gap-6  py-6  items-center  "
+                    className="grid grid-rows-1 px-6 text-[18px]   items-center  "
                     style={{
                       gridTemplateColumns: "minmax(0, 1fr)  8fr 1fr",
                     }}
                   >
                     <input className="w-4 " type="checkbox" />
-                    <div className="flex items-center justify-start flex-auto gap-2 ">
+                    <div className="flex items-center justify-start flex-auto gap-2 mr-5 ">
                       <Image
                         src={product.image || ""}
                         width={50}
                         height={50}
                         alt=""
                       ></Image>
-                      <div>
-                        <p className="text-[15px]">{product.name}</p>
-                        <p className="text-[15px]">Mã sản phẩm: {product.id}</p>
+                      <div className="text-center">
+                        <p className="text-[15px] font-semibold ">
+                          {product.name}
+                        </p>
+                        <p className="text-[13px] ">
+                          Mã sản phẩm: {product.id_product}
+                        </p>
                       </div>
                     </div>
                     <CiTrash
-                      onClick={() => removeFromCart(product.id)}
+                      onClick={() => removeFromCart(product.id_product)}
                       className="w-[20px] h-[20px]"
                     />
                   </div>
 
                   <p className="text-[25px] font-semibold text-orange-500">
-                    {product.price}{" "}
+                    {product.price} VNĐ
                   </p>
                   <div className="flex items-start justify-between gap-2">
                     <button
-                      onClick={() => decreaseQuantity(product.id)}
+                      onClick={() => decreaseQuantity(product.id_product)}
                       className=" w-5 h-5 hover:bg-orange-500 border-black border-[1px] flex items-center justify-center"
                     >
                       -
                     </button>
                     <p className="text-[15px]">{product.quantity}</p>
                     <button
-                      onClick={() => increaseQuantity(product.id)}
+                      onClick={() => increaseQuantity(product.id_product)}
                       className="w-5 h-5 hover:bg-orange-500 border-black border-[1px] flex items-center justify-center "
                     >
                       +

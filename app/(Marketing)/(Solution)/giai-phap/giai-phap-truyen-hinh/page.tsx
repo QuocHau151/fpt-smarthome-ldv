@@ -22,7 +22,7 @@ export default function SecuritySolution() {
           content="Cả thế giới trong tầm tay bạn với FPT Play Box S"
         />
       </Helmet>
-      <div className="pt-[120px]">
+      <div className="pt-[120px] max-lg:pt-[72px] max-md:pt-[60px]">
         <div className="bg-[url('/assets/images/solution/truyen-hinh/1668583056-Group-649.png')] w-full h-[500px] bg-cover bg-no-repeat bg-center max-md:h-[250px]"></div>
       </div>
       <div className="text-center flex flex-col py-[100px] max-md:py-[50px]">

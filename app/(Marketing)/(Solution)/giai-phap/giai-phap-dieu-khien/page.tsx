@@ -22,7 +22,7 @@ export default function SolutionControl() {
           content="Sản phẩm FPT Smart Home giúp ngôi nhà bạn thông minh hơn"
         />
       </Helmet>
-      <div className="pt-[125px]">
+      <div className="pt-[125px] max-lg:pt-[72px] max-md:pt-[60px]">
         <div className="bg-[url('/assets/images/solution/dieu-khien/1668581934-Group-611.png')] w-full h-[500px]  bg-cover bg-no-repeat bg-center max-md:h-[250px]"></div>
       </div>
       <div className="text-center flex flex-col py-[100px] max-md:py-[50px]">

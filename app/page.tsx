@@ -130,28 +130,28 @@ export default function Home() {
       {/*  */}
       <section
         data-aos="fade-up"
-        className="max-md:py-[30px]  container flex flex-col items-center py-[100px] gap-20 max-lg:px-20  max-md:px-10 "
+        className="max-md:py-[30px]  container flex flex-col items-center py-[100px] gap-20 max-lg:px-20  max-md:px-10 max-md:gap-8"
       >
         <div className="">
-          <h6 className="text-h6 font-bold text-gray-500 text-center mb-2">
+          <h6 className="text-h6 font-bold text-gray-500 text-center mb-2 max-md:text-[18px]">
             FPT Smart Home - Thương hiệu nhà thông minh từ FPT
           </h6>
-          <h2 className="text-center text-h4 font-bold text-slate-700 antialiased  ">
+          <h2 className="text-center text-h4 font-bold text-slate-700 antialiased max-md:text-[25px] ">
             Sản Phẩm Nổi Bật
           </h2>
         </div>
         <div className="flex items-center justify-between gap-10 max-lg:flex-col-reverse">
           <div className="flex flex-col items-start w-full gap-6">
-            <h3 className="text-h4 font-bold antialiased uppercase text-gray-800 ">
+            <h3 className="text-h4 font-bold antialiased uppercase text-gray-800 max-md:text-[25px]">
               Ổ Cắm Thông Minh WiFi
             </h3>
-            <p className="text-justify font-regular">
+            <p className="text-justify font-regular max-md:text-[15px]">
               Ổ cắm thông minh WiFi giúp biến các thiết bị điện gia dụng trong
               nhà như quạt, đèn, sạc, ấm đun… thành các thiết bị thông minh khi
               dễ dàng điều khiển chúng từ xa, hẹn giờ tự động.
             </p>
             <h3 className="text-h4 font-bold text-gray-800">350.000 VNĐ</h3>
-            <span className="mt-[-29px] text-gray-400 ml-6 max-md:ml-0">
+            <span className="mt-[-29px] text-gray-400 ml-6 max-md:ml-0 max-md:text-[12px]">
               (Chưa bao gồm VAT)
             </span>
             <Link href="/phu-kien/o-cam-thong-minh-wifi">
@@ -176,7 +176,7 @@ export default function Home() {
         data-aos="fade-up"
         className="max-md:py-[30px] container flex flex-col items-center gap-20 py-[50px]  max-lg:px-20 max-md:px-10 max-md:gap-10 "
       >
-        <div className="text-center text-h4 font-bold text-slate-700 antialiased">
+        <div className="text-center text-h4 font-bold text-slate-700 antialiased max-md:text-[25px]">
           <h2>Bộ sưu tập công tắc</h2>
         </div>
         <div className="flex items-center justify-center gap-6 max-md:flex-col">
@@ -225,7 +225,7 @@ export default function Home() {
             smartphone.
           </p>
           <Link href="/can-ho-mau">
-            <Button className="w-[180px] h-[50px] bg-white bg-opacity-0 border-2 border-black text-black hover:bg-opacity-1 hover:text-white">
+            <Button className="w-[180px] h-[50px] bg-white bg-opacity-0 border-2 border-black text-black hover:bg-opacity-1 hover:text-white max-md:w-[120px] max-md:h-[40px] max-md:text-[14px]">
               Xem ngay
             </Button>
           </Link>
@@ -240,7 +240,9 @@ export default function Home() {
               alt=""
             />
             <div className="flex flex-col  py-6 px-2 border-b-[1px] border-slate-300 w-full text-center mb-4">
-              <h5 className="text-h5 font-semibold">Làng Yến Kiên Giang</h5>
+              <h5 className="text-h5 font-semibold max-md:text-[20px]">
+                Làng Yến Kiên Giang
+              </h5>
               <p>Tỉnh Kiên Giang</p>
             </div>
             <div className="flex items-center gap-4 mb-4">
@@ -344,7 +346,9 @@ export default function Home() {
               alt=""
             />
             <div className="flex flex-col  py-6 px-2 border-b-[1px] border-slate-300 w-full text-center mb-4">
-              <h5 className="text-h5 font-semibold">Nhà phố Ninh Thuận</h5>
+              <h5 className="text-h5 font-semibold max-md:text-[20px]">
+                Nhà phố Ninh Thuận
+              </h5>
               <p>Tỉnh Ninh Thuận</p>
             </div>
             <div className="flex items-center gap-4 mb-4">
@@ -448,7 +452,9 @@ export default function Home() {
               alt=""
             />
             <div className="flex flex-col  py-6 px-2 border-b-[1px] border-slate-300 w-full text-center mb-4">
-              <h5 className="text-h5 font-semibold">Căn hộ Phú Mỹ Hưng</h5>
+              <h5 className="text-h5 font-semibold max-md:text-[20px]">
+                Căn hộ Phú Mỹ Hưng
+              </h5>
               <p>Phú Mỹ Hưng Quận 7</p>
             </div>
             <div className="flex items-center gap-4 mb-4">
@@ -748,7 +754,7 @@ export default function Home() {
         className="max-md:py-[30px] py-[100px] container "
       >
         <div>
-          <h2 className="text-center text-h3 mb-[100px] font-semibold text-gray-700 max-lg:text-[45px] max-md:text-[35px] max-md:mb-[30px]">
+          <h2 className="text-center text-[48px] mb-[100px] font-semibold text-gray-700 max-lg:text-[45px] max-md:text-[28px] max-md:mb-[30px] max-md:px-6">
             Video sản phẩm nhà thông minh
           </h2>
         </div>
@@ -955,17 +961,17 @@ export default function Home() {
         className="max-md:py-[30px] container flex items-center justify-center gap-6 py-[100px]  max-lg:px-20 max-md:px-10"
       >
         <div className="basis-1/2 w-full max-lg:basis-full">
-          <h2 className="text-h3 font-semibold text-gray-800 mb-10 max-lg:text-center max-md:text-[30px]">
+          <h2 className="text-h3 font-semibold text-gray-800 mb-10 max-lg:text-center max-md:text-[30px] ">
             Câu hỏi thường gặp
           </h2>
           <div className="w-full ">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem className="py-4" value="item-1">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Nhà thông minh (Smart Home) là gì?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   Nhà thông minh (Smart Home) là ngôi nhà được trang bị các
                   thiết bị điện tử có thể điều khiển trực tiếp hoặc từ xa qua
                   smartphone. Đặc biệt với FPT Smart Home bạn có thể điều khiển
@@ -975,12 +981,12 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="py-4" value="item-2">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Lắp đặt thiết bị nhà thông minh FPT Smart Home có phức tạp
                   không?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   Với sản phẩm FPT Smart Home bạn có thể tự lắp đặt thiết bị
                   thông minh cho gia đình của mình. Ngoài ra, đội ngũ kỹ thuật
                   từ FPT Smart Home luôn sẵn sàng hỗ trợ bạn trong quá trình tư
@@ -988,23 +994,23 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="py-4" value="item-3">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Với khoản kinh phí bao nhiêu thì có thể lắp đặt được nhà thông
                   minh FPT Smart Home?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   Với kinh phí từ khoảng 10 triệu đồng bạn có thể biến ngôi nhà
                   của mình thành ngôi nhà thông minh.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="py-4" value="item-4">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Nhà tôi đã hoàn thiện rồi và muốn thay thế thiết bị trong nhà
                   thành thiết bị thông minh có được không?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   Hoàn toàn được và dễ dàng nâng cấp từ thiết bị bình thường lên
                   các thiết bị thông minh. FPT Smart Home sẽ hỗ trợ tư vấn, khảo
                   sát để đưa ra phương án nâng cấp tối ưu cho khách hàng, mang
@@ -1012,11 +1018,11 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="py-4" value="item-5">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Tôi vẫn chưa yên tâm về chất lượng và nguồn gốc xuất xứ?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   Với FPT Smart Home khách hàng hoàn toàn yên tâm và tin tưởng
                   sử dụng dịch vụ. Các thiết bị nhà thông minh đến từ FPT Smart
                   Home đều do các kỹ sư của FPT Smart Home nghiên cứu và hoàn
@@ -1028,12 +1034,12 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="py-4" value="item-6">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Trong quá trình sử dụng, nếu gặp vấn đề thì FPT Smart Home hỗ
                   trợ ra sao?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   FPT Smart Home là đơn vị trực thuộc của FPT Telecom, luôn dẫn
                   đầu trong việc hỗ trợ khách hàng và mang lại sự trải nghiệm
                   tốt nhất đến khách hàng. Dịch vụ hiện đang có mặt tại tất cả
@@ -1043,11 +1049,11 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem className="py-4" value="item-7">
-                <AccordionTrigger className="mb-4">
+                <AccordionTrigger className="mb-2 max-md:text-[17px]">
                   Sử dụng nhà thông minh FPT Smart Home có bị mất kết nối không?
                   <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
                 </AccordionTrigger>
-                <AccordionContent>
+                <AccordionContent className="max-md:text-[14px]">
                   FPT Smart Home sử dụng các chuẩn kết nối Bluetooth Mesh và
                   Zigbee, đảm bảo hoạt động ổn định trong hệ thống. Các thiết bị
                   sẽ liên kết với nhau thành mạng lưới kết nối được điều khiển
