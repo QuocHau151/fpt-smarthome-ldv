@@ -24,7 +24,7 @@ export default function Page() {
     
     fetchData();
   }, []);
-
+  
   const [selectedOptions, setSelectedOptions] = useState({
     id_product: "PPLBS001",
   });
