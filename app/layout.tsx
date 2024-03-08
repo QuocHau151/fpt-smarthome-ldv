@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/auth";
@@ -26,10 +25,9 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html>
         <head>
-          <title>Home</title>
           <link
             rel="canonical"
-            href="https://fpt-smarthome.vn"
+            href="https://fpt-smarthome.com"
             key="canonical"
           />
           <GoogleAnalytics gaId="G-JY11M3DKR0" />
@@ -42,7 +40,6 @@ export default async function RootLayout({
           <Toaster />
           <main>
             <Providers>{children}</Providers>
-            <SpeedInsights />
           </main>
         </body>
       </html>
