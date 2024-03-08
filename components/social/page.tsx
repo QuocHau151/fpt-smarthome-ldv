@@ -32,12 +32,12 @@ export default function SocialConnect() {
   });
   function onSubmit(values: z.infer<typeof formZaLoSchema>) {
     console.log(values);
-    window.open(`https://zalo.me/09332133357`, "_blank");
+    window.open(`https://zalo.me/0932133357`, "_blank");
   }
   return (
     <div className="fixed z-50 bottom-10 right-6 cursor-pointer flex flex-col gap-6 max-md:bottom-3 max-md:right-3">
       <a
-        href="tel:09332133357"
+        href="tel:0932133357"
         className="w-12 h-12 bg-green-600 flex items-center justify-center rounded-full animate-bounce"
       >
         <FaPhoneAlt color={"white"} size={"22px"} />

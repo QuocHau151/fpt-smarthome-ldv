@@ -171,7 +171,7 @@ export default function Page() {
             <Image
               className="rounded-2xl basis-1/2 w-full"
               src="/assets/images/product/thumnail/1668569310-cong-tac-canh-6-nut_.png"
-              width={1000}
+              width={500}
               height={500}
               alt=""
             />

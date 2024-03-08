@@ -42,19 +42,9 @@ export default function Footer() {
                   height={24}
                   alt=""
                 />
-                <p>0906.030.030 - Hỗ trợ trực tiếp ( Nguyên )</p>
+                <p> 0932133357 - Hỗ trợ trực tiếp ( Vương )</p>
               </div>
-              <div className="flex items-center gap-6 font-light">
-                <Image
-                  src="/assets/icon/footer/_phone.png"
-                  width={24}
-                  height={24}
-                  alt=""
-                />
-                <p>
-                  0901.237.451 - Hỗ trợ trực tiếp <br /> ( Tuyết )
-                </p>
-              </div>
+
               <div className="flex items-start gap-6 font-light">
                 <Image
                   src="/assets/icon/footer/mail.png"
@@ -106,10 +96,8 @@ export default function Footer() {
           <h2>
             Địa chỉ: Lô 37-39A Đường 19, KCX Tân Thuận, Quận 7 TP.Hồ Chí Minh
           </h2>
-          <h2> 0906030030 ( Nguyên ) - Hỗ trợ trực tiếp </h2>
-          <h2> 0901237451 ( Tuyết ) - Hỗ trợ trực tiếp</h2>
-          <h2> Email: TuyetVTB2@fpt.com </h2>
-          <h2> Email: NguyenDL2@fpt.com </h2>
+          <h2> 0932 133 357 ( Vương ) - Hỗ trợ trực tiếp </h2>
+
           <Image
             className="max-md:w-[150px]"
             src="/assets/icon/footer/logoSaleNoti 1.png"

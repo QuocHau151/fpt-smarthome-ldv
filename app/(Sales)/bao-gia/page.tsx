@@ -128,7 +128,9 @@ export default function BaoGia() {
                     Zalo
                   </h1>
 
-                  <h1 className="px-4 ">0901 237 451</h1>
+                  <a href="https://zalo.me/0932133357" className="px-4 ">
+                    0932 133 357
+                  </a>
                 </Button>
                 <Button className="flex items-center bg-slate-600 h-12">
                   <svg
@@ -152,7 +154,7 @@ export default function BaoGia() {
                     ></path>
                   </svg>
 
-                  <h1 className="px-4 ">0901 237 451</h1>
+                  <h1 className="px-4 ">0932 133 357</h1>
                 </Button>
               </div>
             </div>
@@ -1166,7 +1168,6 @@ export default function BaoGia() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

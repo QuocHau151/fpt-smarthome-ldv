@@ -52,6 +52,9 @@ export default function Home() {
           slidesPerView={1}
           spaceBetween={0}
           loop={true}
+          autoplay={{
+            delay: 1000,
+          }}
           pagination={{
             clickable: true,
           }}
@@ -62,64 +65,63 @@ export default function Home() {
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1691569870-Trang-Chu-Website1920x680-resize.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1686294072-Bo-dieu-khien-hong-ngoai-trang-chu.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1691569853-TrangChuWebsite1920x680-cam-bien-fix-size.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1696234102-Trang-Chu-Website1920x680-fix.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1698721365-TrangChuWebsite1920x680-1-copy.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1701162787-1920x680-copy.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
           <SwiperSlide>
             <Image
               src="/assets/images/banner/1702626067-1920x680-copy-1.jpg"
-              width={1920}
-              height={680}
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="/assets/images/banner/1701162787-1920x680-copy.jpg"
-              width={1920}
-              height={680}
+              width={3000}
+              height={1000}
+              quality={100}
               alt=""
             />
           </SwiperSlide>
