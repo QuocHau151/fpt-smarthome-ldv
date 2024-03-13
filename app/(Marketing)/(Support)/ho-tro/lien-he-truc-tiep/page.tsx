@@ -101,7 +101,7 @@ export default function Page() {
               <h3 className="text-[15px] font-medium border-r-[1px] border-black pr-4 mr-4">
                 Gửi email
               </h3>
-              <h3 className="text-[15px] font-medium  pr-4">00932 133 357</h3>
+              <h3 className="text-[15px] font-medium  pr-4">0932 133 357</h3>
             </div>
             <div className="basis-3/4 bg-white w-full h-min rounded-2xl flex items-center justify-center p-[50px] max-md:py-10 max-md:px-4">
               <Form {...form}>
