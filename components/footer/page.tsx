@@ -32,7 +32,8 @@ export default function Footer() {
                   alt=""
                 />
                 <p className="max-w-[200px]">
-                  Lô 37-39A Đường 19, KCX Tân Thuận, Quận 7 TP.Hồ Chí Minh
+                  Toà nhà FPT Tân Thuận 2, 29 Tân Thuận, KCX Tân Thuận, P Tân
+                  Thuận Đông, Q7, TPHCM
                 </p>
               </div>
               <div className="flex items-center gap-6 font-light">
@@ -52,7 +53,7 @@ export default function Footer() {
                   height={24}
                   alt=""
                 />
-                <p className="">fptsmarthome@fpt.com</p>
+                <p className="">VuongLD2@fpt.com</p>
               </div>
               <Image
                 className="max-md:w-[150px]"
