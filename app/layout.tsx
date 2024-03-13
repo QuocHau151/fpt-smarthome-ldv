@@ -30,10 +30,10 @@ export default async function RootLayout({
             href="https://fpt-smarthome.com"
             key="canonical"
           />
-          <GoogleAnalytics gaId="G-JY11M3DKR0" />
+          <GoogleAnalytics gaId="G-HNW9QB88RT" />
           <meta
             name="google-site-verification"
-            content="SiBQC7Zgw2hF-Pa7esKwX-GpOoAm2lO1ghYwGAjGtyo"
+            content="t5Zm9yWzwDm_9msRiTf16aWkZjpAL--IFa5Qwz-KsNk"
           />
         </head>
         <body className={work_sans.className}>
