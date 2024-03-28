@@ -509,12 +509,50 @@ export default function MobileNav() {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
-                <Link
-                  className="text-left text-black px-6 font-medium text-[16px]"
-                  href="/can-ho-mau"
-                >
-                  Căn hộ mẫu
-                </Link>
+                <Accordion type="single" collapsible>
+                  <AccordionItem className="border-b-0" value="item-1">
+                    <AccordionTrigger>
+                      <div className="text-left text-black px-6 font-medium text-[16px]">
+                        Căn hộ mẫu
+                      </div>
+                      <ChevronDown className="h-[18px] w-[50px] shrink-0 transition-transform duration-200 ml-2" />
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="bg-gray-200 w-full h-min mt-2 pb-[-16px] flex flex-col items-start">
+                        <Link
+                          href="/can-ho-mau/can-ho-1pn"
+                          className="w-full h-min- py-3 px-6 border-y-[1px] border-black text-left font-medium "
+                        >
+                          Căn 1 phòng ngủ
+                        </Link>
+                        <Link
+                          href="/can-ho-mau/can-ho-2pn"
+                          className="w-full h-min- py-3 px-6 border-b-[1px] border-black text-left font-medium "
+                        >
+                          Căn 2 phòng ngủ
+                        </Link>
+                        <Link
+                          href="/can-ho-mau/can-ho-3pn"
+                          className="w-full h-min- py-3 px-6 border-b-[1px] border-black text-left font-medium "
+                        >
+                          Căn 3 phòng ngủ
+                        </Link>
+                        <Link
+                          href="/can-ho-mau/nha-pho-3-tang"
+                          className="w-full h-min- py-3 px-6 border-b-[1px] border-black text-left font-medium "
+                        >
+                          Nhà phố 3 tầng
+                        </Link>
+                        <Link
+                          href="/can-ho-mau/can-ho-duplex-2pn"
+                          className="w-full h-min- py-3 px-6 border-b-[1px] border-black text-left font-medium "
+                        >
+                          Căn hộ Duplex 2 phòng ngủ
+                        </Link>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
 
                 <Accordion type="single" collapsible>
                   <AccordionItem className="border-b-0" value="item-1">

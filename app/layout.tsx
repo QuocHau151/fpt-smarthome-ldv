@@ -33,7 +33,7 @@ export default async function RootLayout({
           <GoogleAnalytics gaId="G-HNW9QB88RT" />
           <meta
             name="google-site-verification"
-            content="t5Zm9yWzwDm_9msRiTf16aWkZjpAL--IFa5Qwz-KsNk"
+            content="eRaqSYmN7VU9r8a7ZnOVyWdduxBwIsI3kvn4QdDNHs4"
           />
         </head>
         <body className={work_sans.className}>

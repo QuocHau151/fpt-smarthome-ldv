@@ -24,11 +24,12 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Apartment from "./can-ho-mau";
 const navs = [
   { id: 1, link: "/", name: "Giới thiệu" },
   { id: 2, link: "/san-pham", name: "Sản phẩm", active: <Product /> },
   { id: 3, link: "/giai-phap", name: "Giải pháp", active: <Solution /> },
-  { id: 4, link: "/can-ho-mau", name: "Căn hộ mẫu" },
+  { id: 4, link: "/can-ho-mau", name: "Căn hộ mẫu", active: <Apartment /> },
   { id: 5, link: "/ho-tro", name: "Hỗ trợ", active: <Support /> },
 ];
 export default function Bottom_Nav() {

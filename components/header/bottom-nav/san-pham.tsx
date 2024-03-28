@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Product() {
   return (
-    <div className=" absolute top-[41px] left-0 bg-slate-300 w-[100vw] h-min z-10">
+    <div className=" absolute top-[41px] left-0 bg-slate-100 w-[100vw] h-min z-10">
       <div className=" grid grid-cols-4 grid-rows-2 py-[30px] px-[30px] items-center justify-center h-full gap-y-6 ">
         <div className="flex items-start justify-center gap-2 ">
           <Image
